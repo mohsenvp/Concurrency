@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Concurrency-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Concurrency" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,12 +54,14 @@
                             </stackView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jm9-Sh-dky">
                                 <rect key="frame" x="18" y="771.5" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="KDx-Bn-6db"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NW1-Cm-HDN">
                                 <rect key="frame" x="197" y="821.5" width="20.5" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20.5" id="YqC-Ag-gPg"/>
-                                    <constraint firstAttribute="width" constant="20.5" id="xuG-uM-UTM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -170,7 +172,7 @@
                             <constraint firstItem="4Xr-G9-rHJ" firstAttribute="top" secondItem="qwX-fr-gh8" secondAttribute="bottom" constant="8" id="zjc-kV-6zX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Bfh-tT-fIh"/>
+                    <navigationItem key="navigationItem" title="Concurrency" id="Bfh-tT-fIh"/>
                     <connections>
                         <outlet property="imageView1" destination="57r-ij-Ft7" id="xUM-AO-vJI"/>
                         <outlet property="imageView2" destination="cme-dv-HdL" id="8O7-zV-UVl"/>
